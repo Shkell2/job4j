@@ -1,15 +1,14 @@
-//package ru.job4j.condition;
+package ru.job4j.condition;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import static ru.job4j.condition.DummyBot.answer;
 
 public class DummyBotTest {
     @Test
     public void whenGreetBot() {
         assertThat(
-                answer("Привет, бот"),
+                DummyBot.answer("Привет, бот"),
                 is("Привет, умник!")
         );
     }
@@ -17,7 +16,7 @@ public class DummyBotTest {
     @Test
     public void whenByeBot() {
         assertThat(
-                answer("Пока"),
+                DummyBot.answer("Пока"),
                 is("До скорой встречи")
         );
     }
@@ -25,7 +24,7 @@ public class DummyBotTest {
     @Test
     public void whenUnknownBot() {
         assertThat(
-                answer("Сколько будет 2 + 2?"),
+                DummyBot.answer("Сколько будет 2 + 2?"),
                 is("Этот вопрос ставит меня в тупик!")
         );
     }
