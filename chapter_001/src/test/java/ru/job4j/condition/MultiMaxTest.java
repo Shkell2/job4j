@@ -4,13 +4,12 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
-public class MultiMaxTest {
-    @Test
-    public void whenSFirstMax() {
-        MultiMax check = new MultiMax();
-        int result = check.max(7, 4, 2);
-        assertThat(result, is(7));
-    }
+public class MultiMaxTest {    @Test
+public void whenSFirstMax() {
+    MultiMax check = new MultiMax();
+    int result = check.max(7, 4, 2);
+    assertThat(result, is(7));
+}
     @Test
     public void whenSecondMax() {
         MultiMax check = new MultiMax();
@@ -29,4 +28,5 @@ public class MultiMaxTest {
         int result = check.max(3, 3, 3);
         assertThat(result, is(3));
     }
+
 }
