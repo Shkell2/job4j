@@ -20,8 +20,8 @@ public class SqMaxTest {
     @Test
     public void whenThirdMax() {
         SqMax check = new SqMax();
-        int result = check.max(1, 4, 9, 5);
-        assertThat(result, is(9));
+        int result = check.max(7, 4, 8, 1);
+        assertThat(result, is(8));
     }
     @Test
     public void whenFourthMax() {
