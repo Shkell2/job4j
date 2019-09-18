@@ -6,25 +6,45 @@ package ru.job4j.calculator;
  *
  */
 public class Calculator {
+    /**
+     * Calculate Add.
+     * @param first - first parametr.
+     * @param second - second parametr.
+     */
     public static void add(double first, double second) {
         double result = first + second;
         System.out.println(first + " + " + second + " = " + result);
     }
+    /**
+     * Calculate Div.
+     * @param first - first parametr.
+     * @param second - second parametr.
+     */
     public static void div(double first, double second) {
         double result = first / second;
         System.out.println(first + " / " + second + " = " + result);
     }
+    /**
+     * Calculate Mulriply.
+     * @param first - first parametr.
+     * @param second - second parametr.
+     */
     public static void multiply(double first, double second) {
         double result = first * second;
         System.out.println(first + " * " + second + " = " + result);
     }
+    /**
+     * Calculate Subtrack.
+     * @param first - first parametr.
+     * @param second - second parametr.
+     */
     public static void subtrack(double first, double second) {
         double result = first - second;
         System.out.println(first + " - " + second + " = " + result);
     }
 
     /**
-     *Main.
+     * Main.
      * @param args - args.
      */
     public static void main(String[] args) {
