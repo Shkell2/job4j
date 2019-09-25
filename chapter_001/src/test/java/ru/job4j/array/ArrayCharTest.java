@@ -16,7 +16,7 @@ public class ArrayCharTest {
     @Test
     public void test2() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] pref = {'H', 'e'};
+        char[] pref = {'H', 'i'};
         boolean res = ArrayChar.startsW(word, pref);
         boolean expected = false;
         assertThat(res, is(expected));
